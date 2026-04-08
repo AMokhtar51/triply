@@ -1,0 +1,60 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36">
+  <diagram name="Page-1" id="ZFUCVxkSnaAUSkfOBe9R">
+    <mxGraphModel dx="1070" dy="1136" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="light-dark(#FFFFFF,#FFFFFF)" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="aV_6u_sauHi57mAYcfcm-1" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fillColor=light-dark(#F1BAE5,#BA62A7);strokeColor=light-dark(#36393D,#000000);strokeWidth=2;fontColor=light-dark(#000000,#000000);rounded=1;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;dinnerPoll:Poll&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;pollID = 305&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;tripID = 6002&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;question = &quot;What do you want for dinner tonight?&quot;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;options = [&quot;Grilled Chicken&quot;, &quot;Fish&quot;, &quot;Vegan Pasta&quot;]&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;isAnonymous = false&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;deadline = 2026-12-21&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;status = &quot;Closed&quot;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;type = &quot;standard&quot;&lt;/font&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="184" width="337.5" x="254" y="221" as="geometry" />
+        </mxCell>
+        <mxCell id="aV_6u_sauHi57mAYcfcm-3" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aV_6u_sauHi57mAYcfcm-1" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="416.04347826086973" y="456" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aV_6u_sauHi57mAYcfcm-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=light-dark(#36393D,#000000);fillColor=none;align=center;verticalAlign=middle;rounded=0;strokeWidth=2;fontColor=light-dark(#000000,#000000);" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Close Poll&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="281.25" x="282" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="aV_6u_sauHi57mAYcfcm-13" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fillColor=light-dark(#F1BAE5,#775DBA);strokeColor=light-dark(#36393D,#000000);strokeWidth=2;fontColor=light-dark(#000000,#000000);rounded=1;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;vote1:Vote&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;voteID: 1&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;pollID: 305&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;userID: 1167&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;selectedOption: &quot;Grilled Chicken&quot;&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="128" width="238" x="16" y="586" as="geometry" />
+        </mxCell>
+        <mxCell id="aV_6u_sauHi57mAYcfcm-14" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fillColor=light-dark(#F1BAE5,#775DBA);strokeColor=light-dark(#36393D,#000000);strokeWidth=2;fontColor=light-dark(#000000,#000000);rounded=1;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;vote2:Vote&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;voteID: 2&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;pollID: 305&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;userID: 1156&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;selectedOption: &quot;Fish&quot;&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="128" width="238" x="311" y="586" as="geometry" />
+        </mxCell>
+        <mxCell id="aV_6u_sauHi57mAYcfcm-15" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fillColor=light-dark(#F1BAE5,#775DBA);strokeColor=light-dark(#36393D,#000000);strokeWidth=2;fontColor=light-dark(#000000,#000000);rounded=1;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;vote3:Vote&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;voteID: 3&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;pollID: 305&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;userID: 1102&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;selectedOption: &quot;Grilled Chicken&quot;&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="128" width="238" x="591.5" y="586" as="geometry" />
+        </mxCell>
+        <mxCell id="aV_6u_sauHi57mAYcfcm-16" edge="1" parent="1" source="aV_6u_sauHi57mAYcfcm-1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;strokeWidth=3;strokeColor=light-dark(#000000,#000000);" value="">
+          <mxGeometry relative="1" x="-1" y="3" as="geometry">
+            <Array as="points">
+              <mxPoint x="295" y="470" />
+              <mxPoint x="126" y="470" />
+            </Array>
+            <mxPoint x="295" y="515" as="sourcePoint" />
+            <mxPoint x="126" y="586" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aV_6u_sauHi57mAYcfcm-18" edge="1" parent="1" source="aV_6u_sauHi57mAYcfcm-1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;strokeWidth=3;strokeColor=light-dark(#000000,#000000);exitX=0.901;exitY=1.005;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="558" y="482" />
+              <mxPoint x="762" y="482" />
+            </Array>
+            <mxPoint x="559" y="409" as="sourcePoint" />
+            <mxPoint x="762" y="586" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aV_6u_sauHi57mAYcfcm-19" edge="1" parent="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;strokeWidth=3;strokeColor=light-dark(#000000,#000000);" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="423" y="496" />
+              <mxPoint x="441" y="496" />
+            </Array>
+            <mxPoint x="423" y="405" as="sourcePoint" />
+            <mxPoint x="441" y="586" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -39,7 +39,15 @@
 - manageTrips(tripID: int): Trip
 
 ## Member Trip
-- TODO
+#### attributes
+- membershipID: int
+- tripID: int
+- userID: int
+- role: string
+- joinedAt: datetime
+#### methods
+- join(tripID: int, userID: int, role: string): void
+- leave(tripID: int, userID: int): void
 
 ## Trip
 #### attributes

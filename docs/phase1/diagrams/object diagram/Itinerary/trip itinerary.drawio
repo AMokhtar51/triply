@@ -1,0 +1,91 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="NtGnHOESx2KZgExzhd10">
+    <mxGraphModel dx="-574" dy="1196" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="light-dark(#FFFFFF,#FCFCFC)" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-L1oBOoDYerwTX8qRhxH-1" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fillColor=light-dark(#FFF2CC,#966C00);strokeColor=light-dark(#D6B656,#000000);fillStyle=auto;fontColor=light-dark(#000000,#000000);rounded=1;strokeWidth=3;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;aswanTrip:Trip&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;tripID: 6002&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;destination: &quot;Aswan, Upper Egypt&quot;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;startDate: 2026-12-20&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;endDate: 2026-12-25&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;baseCurrency: &quot;EGP&quot;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;budgetLimit: 20000&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;createdBy: 12876&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;status: &quot;Planned&quot;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="164.25" width="290" x="1970" y="215.75" as="geometry" />
+        </mxCell>
+        <mxCell id="-L1oBOoDYerwTX8qRhxH-2" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fillColor=light-dark(#FAD7AC,#965A0E);strokeColor=light-dark(#B46504,#000000);fontColor=light-dark(#000000,#000000);strokeWidth=3;rounded=1;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;itinerary1:Itinerary&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;itineraryID: 401&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;tripID: 6002&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;activities: [801, 802, 803, 804]&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="117" width="290" x="2360" y="237" as="geometry" />
+        </mxCell>
+        <mxCell id="-L1oBOoDYerwTX8qRhxH-3" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fillColor=light-dark(#B0E3E6,#206F75);strokeColor=light-dark(#0E8088,#000000);fontColor=light-dark(#000000,#000000);strokeWidth=2;rounded=1;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;balloonRide:Activity&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;activityID: 801&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;itineraryID: 401&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;name: &quot;Hot Air Balloon&quot;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;location: &quot;West Bank Aswan&quot;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;dateTime: 2026-12-21 05:00 PM&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;duration: 2&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;modeOfTransport: &quot;Van &amp;amp; Balloon&quot;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;createBy: 12876&lt;/p&gt;" vertex="1">
+          <mxGeometry height="159" width="210" x="2088" y="496" as="geometry" />
+        </mxCell>
+        <mxCell id="-L1oBOoDYerwTX8qRhxH-4" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#206F75);strokeColor=light-dark(#0E8088,#000000);fontColor=light-dark(#000000,#000000);rounded=1;strokeWidth=2;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;nubianVillage:Activity&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;activityID: 803&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px;&quot;&gt;itineraryID: 401&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;name: &quot;Nubian Village Tour&quot;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;location: &quot;Gharb Soheil&quot;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;dateTime: 2026-12-21 04:00 PM&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;duration: 0.5&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;modeOfTransport: &quot;Felucca&quot;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;createBy: 12369&lt;/p&gt;" vertex="1">
+          <mxGeometry height="158" width="200" x="2568" y="496" as="geometry" />
+        </mxCell>
+        <mxCell id="-L1oBOoDYerwTX8qRhxH-5" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fillColor=light-dark(#B0E3E6,#206F75);strokeColor=light-dark(#0E8088,#000000);fontColor=light-dark(#000000,#000000);strokeWidth=2;rounded=1;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;templeVisit:Activity&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;activityID: 802&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px;&quot;&gt;itineraryID: 401&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;name: &quot;Philae Temple Visit&quot;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;location: &quot;Philae Island&quot;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;dateTime: 2026-12-21 10:00 AM&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;duration: 1&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;modeOfTransport: &quot;Motorboat&quot;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;createBy: 12387&lt;/p&gt;" vertex="1">
+          <mxGeometry height="160" width="200" x="2338" y="496" as="geometry" />
+        </mxCell>
+        <mxCell id="-L1oBOoDYerwTX8qRhxH-6" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fillColor=light-dark(#B0E3E6,#206F75);strokeColor=light-dark(#0E8088,#000000);fontColor=light-dark(#000000,#000000);strokeWidth=2;rounded=1;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;soundAndLight:Activity&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;activityID: 804&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px;&quot;&gt;itineraryID: 401&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;name: &quot;Sound and Light Show&quot;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;location: &quot;Philae Temple&quot;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;dateTime: 2026-12-21 08:00 PM&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;duration: 1.5&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;modeOfTransport: &quot;Motorboat&quot;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;createBy: 12380&lt;/p&gt;" vertex="1">
+          <mxGeometry height="164" width="200" x="2808" y="496" as="geometry" />
+        </mxCell>
+        <mxCell id="-L1oBOoDYerwTX8qRhxH-7" edge="1" parent="1" source="-L1oBOoDYerwTX8qRhxH-1" style="endArrow=open;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontColor=light-dark(#000000,#000000);strokeWidth=2;strokeColor=light-dark(#000000,#000000);endFill=0;endSize=9;startArrow=diamond;startFill=1;startSize=12;" target="-L1oBOoDYerwTX8qRhxH-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2400" y="557" as="sourcePoint" />
+            <mxPoint x="2450" y="507" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-L1oBOoDYerwTX8qRhxH-9" edge="1" parent="1" source="-L1oBOoDYerwTX8qRhxH-3" style="endArrow=none;html=1;rounded=0;exitX=0.101;exitY=-0.006;exitDx=0;exitDy=0;exitPerimeter=0;fontColor=light-dark(#000000,#000000);strokeWidth=2;strokeColor=light-dark(#000000,#000000);startArrow=open;startFill=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2508" y="616" as="sourcePoint" />
+            <mxPoint x="2108" y="456" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-L1oBOoDYerwTX8qRhxH-10" edge="1" parent="1" source="-L1oBOoDYerwTX8qRhxH-5" style="endArrow=diamond;html=1;rounded=0;exitX=0.456;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;fontColor=light-dark(#000000,#000000);strokeWidth=2;strokeColor=light-dark(#000000,#000000);entryX=0.25;entryY=1;entryDx=0;entryDy=0;endFill=1;endSize=8;edgeStyle=orthogonalEdgeStyle;startArrow=open;startFill=0;" target="-L1oBOoDYerwTX8qRhxH-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="2429" y="473" />
+              <mxPoint x="2432" y="473" />
+              <mxPoint x="2432" y="425" />
+              <mxPoint x="2433" y="425" />
+            </Array>
+            <mxPoint x="2508" y="616" as="sourcePoint" />
+            <mxPoint x="2428" y="456" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-L1oBOoDYerwTX8qRhxH-12" edge="1" parent="1" source="-L1oBOoDYerwTX8qRhxH-6" style="endArrow=diamond;html=1;rounded=0;fontColor=light-dark(#000000,#000000);strokeWidth=2;strokeColor=light-dark(#000000,#000000);edgeStyle=orthogonalEdgeStyle;entryX=1.001;entryY=0.891;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;startArrow=open;startFill=0;" target="-L1oBOoDYerwTX8qRhxH-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="2908" y="420" />
+              <mxPoint x="2898" y="420" />
+              <mxPoint x="2898" y="342" />
+              <mxPoint x="2671" y="342" />
+            </Array>
+            <mxPoint x="2508" y="616" as="sourcePoint" />
+            <mxPoint x="2878" y="343" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-L1oBOoDYerwTX8qRhxH-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#000000);fontSize=18;fontStyle=1" value="&lt;font&gt; Trip Itinerary for Aswan Tour&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="230" x="2360" y="147" as="geometry" />
+        </mxCell>
+        <mxCell id="-L1oBOoDYerwTX8qRhxH-21" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeWidth=2;strokeColor=light-dark(#000000,#000000);" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2107" y="456" as="sourcePoint" />
+            <mxPoint x="2356" y="456" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-L1oBOoDYerwTX8qRhxH-22" edge="1" parent="1" style="endArrow=diamond;html=1;rounded=0;exitX=0.101;exitY=-0.006;exitDx=0;exitDy=0;exitPerimeter=0;fontColor=light-dark(#000000,#000000);strokeWidth=2;strokeColor=light-dark(#000000,#000000);entryX=0.043;entryY=1.003;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;endSize=8;edgeStyle=orthogonalEdgeStyle;" target="-L1oBOoDYerwTX8qRhxH-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2355" y="456" as="sourcePoint" />
+            <mxPoint x="2354" y="417" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-L1oBOoDYerwTX8qRhxH-23" edge="1" parent="1" source="-L1oBOoDYerwTX8qRhxH-2" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;entryX=0.478;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.61;exitY=1.009;exitDx=0;exitDy=0;exitPerimeter=0;strokeWidth=2;strokeColor=light-dark(#000000,#000000);" target="-L1oBOoDYerwTX8qRhxH-4" value="">
+          <mxGeometry relative="1" x="-1" y="3" as="geometry">
+            <Array as="points">
+              <mxPoint x="2537" y="397" />
+              <mxPoint x="2638" y="397" />
+              <mxPoint x="2638" y="422" />
+              <mxPoint x="2664" y="422" />
+            </Array>
+            <mxPoint x="2537" y="397" as="sourcePoint" />
+            <mxPoint x="2721" y="422" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
