@@ -38,9 +38,14 @@
 - suspendUser(userID): void
 - manageTrips(tripID: int): Trip
 
+## Member Trip
+- TODO
+
 ## Trip
 #### attributes
 - tripID: int
+- itinerary: Itinerary()
+- expense: Expense[]
 - destination: string
 - startDate: date
 - endDate: date
@@ -58,6 +63,7 @@
 #### attributes
 - itineraryID: int
 - tripID: int
+- itineraryVersion: ItineraryVersion()
 - activities: Activity[]
 #### methods
 - conflictDetection(activityID: int): boolean
@@ -74,7 +80,7 @@
 - name: string
 - location: string
 - dateTime: datetime 
-- duration: int    ****           
+- duration: int
 - status: string 
 - modeOfTransport: string
 - createdBy : int
@@ -115,6 +121,7 @@
 #### attributes
 - pollID: int
 - tripID: int
+- vote: Vote[]
 - question: string
 - options: string[]
 - isAnonymous: boolean
@@ -179,7 +186,7 @@
 - tripID: int
 - invitedBy: int
 - invitedUserEmail: string
-- inviteToken: string
+- inviteToken: string (random numbers generated)
 - status: string
 ### methods
 - sendInvitation(tripID: int, invitedBy: int, email: string) : void
