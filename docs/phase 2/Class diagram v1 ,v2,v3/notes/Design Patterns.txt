@@ -1,0 +1,71 @@
+----------------------------------------------------------------
+				PATTERN 1 — SINGLETON: Database
+----------------------------------------------------------------
+ 
+Description:
+  The Singleton pattern ensures a class has only one instance
+  and provides a global access point to it.
+ 
+Problem It solves:
+  Without Singleton, every class that needs DB access would
+  create its own PDO connection, causing resource waste,
+  inconsistent state, and connection limit exhaustion.
+ 
+How it affects the design:
+  Database has a private constructor and private __clone(),
+  preventing external instantiation. A static $instances map
+  caches one PDO per database file. All classes call
+  Database::getInstance() or Database::for() instead of
+  creating connections directly. This is already implemented
+  in config/Database.php.
+  
+----------------------------------------------------------------
+				PATTERN 2 — FACTORY METHOD: Auth
+----------------------------------------------------------------
+ 
+Description:
+  The Factory Method pattern defines an interface for creating
+  an object but lets subclasses (or internal logic) decide
+  which class to instantiate.
+ 
+Problem it solves:
+  The application needs to create different User subtypes
+  (Member & TripLeader) based on the role field at login.
+  Without a factory, every call site would need its own
+  if/switch logic to decide which subtype to instantiate,
+  causing duplication and fragility.
+ 
+How it affects the design:
+  Auth::login() and Auth::register() act as factory methods.
+  They inspect the role field and return the correct concrete
+  subtype (Member or TripLeader) through the abstract User
+  type. The rest of the application works with User — it never
+  needs to know the concrete class. Implemented in
+  classes/boundary/Auth.php.
+  
+----------------------------------------------------------------
+				PATTERN 3 — OBSERVER: Notification
+----------------------------------------------------------------
+ 
+Description:
+  The Observer pattern defines a one-to-many dependency so that
+  when one object (subject) changes state, all its dependents
+  (observers) are notified automatically.
+ 
+Problem it solves:
+  Multiple events across the system (budget exceeded, poll
+  closed, trip invite sent, daily briefing) need to push
+  updates to relevant users. Without Observer, every feature
+  would need to manually call notification logic inline,
+  creating tight coupling between business logic and
+  notification delivery.
+ 
+How it affects the design:
+  Two interfaces are introduced: ISubject and IObserver.
+  Notification implements ISubject — it holds a subscriber
+  list and broadcasts to all observers when triggered.
+  User implements IObserver — every user can receive updates.
+  Classes like Trip, Poll, Expense, and Invitation call
+  Notification methods when state changes. This decouples
+  event sources from notification delivery entirely.
+  Implemented in classes/control/Notification.php.

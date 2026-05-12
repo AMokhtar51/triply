@@ -1,0 +1,5 @@
+1- Singleton -> Database
+2- Observer -> Notification
+3- Memento -> Itinerary Version
+4- Factory     -> Auth
+5- Strategy   - > Expense

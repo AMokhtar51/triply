@@ -1,0 +1,165 @@
+----------------------------------------------------------------
+Class: Database <<singleton>>
+----------------------------------------------------------------
+Attributes:
+  - instances: array          {static}
+  - DBS: array                {static}
+  - TABLE_MAP: array          {static}
+ 
+Methods:
+  - __construct(): void
+  - __clone(): void
+  + static getInstance(db: string): PDO
+  + static for(table: string): PDO
+  + static resolvePath(relative: string): string
+  
+----------------------------------------------------------------
+ Class: Auth  <<factory>>
+----------------------------------------------------------------
+Attributes:
+  - COOKIE_NAME: string       {static}
+  - TOKEN_TTL: int            {static}
+  - COOKIE_SECURE: boolean    {static}
+ 
+Methods:
+  + static register(email: string, password: string,
+                    name: string, phone: string,
+                    nationality: string, role: string): int
+  + static login(email: string, password: string): User
+  + static logout(): void
+  + static current(): User
+  + static require(): User
+  + static requireRole(role: string): User
+  + static revokeAll(userID: int): void
+  + static purgeExpired(): void
+  + static issueToken(userID: int): void
+  + static setCookie(value: string, expires: int): void
+  + static clearCookie(): void
+----------------------------------------------------------------
+Encryption:
+----------------------------------------------------------------
+- ALGO: string
+- IV_LEN: int
+- TAG_LEN: int
+- CONTEXT: string
+
+methods:
++ static deriveKey(userID: int): string
++ static encryptJson(data: array, userID: int): string
++ static decryptJson(blob: string, userID: int): array
+
+----------------------------------------------------------------
+Interface: IObserver
+----------------------------------------------------------------
+Methods:
+  + update(message: string, type: string): void
+ 
+Implemented by:
+  User (abstract) — and therefore Member and TripLeader
+ 
+----------------------------------------------------------------
+Interface: IdentifiableInterface
+----------------------------------------------------------------
+Methods:
+	+ getId(): int
+	+ findById:(id: int): ?static
+Implemented by:
+  User
+  
+---------------------------------------------------------------
+Interface: tripScopedInterface
+----------------------------------------------------------------
+
+Methods:
+    + getTripId(): int
+    + static findByTrip(tripId: int, userID: int): array
+================================================================
+				Relationships
+================================================================
+
+----------------------------------------------------------------
+Inheritance (Generalization):
+----------------------------------------------------------------
+  User          <|--  Member
+  Member        <|--  TripLeader
+  User          <|--  Admin
+ 
+----------------------------------------------------------------
+Interface Realization:
+----------------------------------------------------------------
+  Notification  ..|>  ISubject
+  User          ..|>  IObserver
+ 
+----------------------------------------------------------------
+Composition (◆ whole has filled diamond):
+----------------------------------------------------------------
+  Trip          ◆1 --- * Activity       (Trip owns Activities)
+  Trip          ◆1 --- 1 Itinerary      (Trip owns Itinerary)
+  Itinerary     ◆1 --- * ItineraryVersion
+  TripMember    ◆1 --- 1 HealthInfo     (from V2)
+  Poll          ◆1 --- * Vote
+ 
+----------------------------------------------------------------
+Aggregation (◇ whole has open diamond):
+----------------------------------------------------------------
+  Trip          ◇1 --- * Document
+  Trip          ◇1 --- * Expense
+  Trip          ◇1 --- * Notification
+  Trip          ◇1 --- * ChangeLog      (from V2)
+  Trip          ◇1 --- * Emergency
+ 
+----------------------------------------------------------------
+Associations (with multiplicity and roles):
+----------------------------------------------------------------
+  User          1 --- * MemberTrip      (role: participant)
+  Trip          1 --- * MemberTrip      (role: group)
+
+Note:
+        Qualifier on Trip side: tripID
+        Qualifier on User side: userID
+ 
+  Trip          1 --- * Poll
+  Poll          1 --- * Vote
+  Activity      1 --- * MemberTrip      (RSVP tracking, role: attendee)
+  Invitation    * --- 1 Trip
+  Invitation    * --- 1 User            (role: invitee)
+ 
+----------------------------------------------------------------
+Self-Association (Recursive):
+----------------------------------------------------------------
+  User          1 --- * User
+  role: invitedBy (a User invites other Users via Invitation)
+ 
+----------------------------------------------------------------
+Qualified Association:
+----------------------------------------------------------------
+  Trip [tripID] --- * Document
+  (tripID qualifies which documents belong to which trip)
+ 
+  Trip [tripID] --- * Expense
+  (tripID qualifies which expenses belong to which trip)
+ 
+----------------------------------------------------------------
+Dependencies:
+----------------------------------------------------------------
+  ItineraryController  -->  RouteOptimizeAPI
+  ItineraryController  -->  ExternalMapService
+  DocumentController   -->  Document
+  DocumentController   -->  Encryption
+  HealthInfoController -->  HealthInfo
+  PermissionController -->  TripLeader
+  Encryption           -->  User
+  Auth                 -->  User              (factory creates)
+  Notification         -->  User              (notifies)
+  Trip                 -->  Notification      (triggers)
+  Poll                 -->  Notification      (triggers on close)
+  Expense              -->  Notification      (triggers on budget)
+  Invitation           -->  Notification      (triggers on invite)
+ 
+----------------------------------------------------------------
+Polymorphism note (for diagram annotation):
+----------------------------------------------------------------
+  Auth::login() returns User (abstract type).
+  At runtime it returns Member or TripLeader.
+  Mark login() return type as User with a note:
+  {polymorphic — returns Member or TripLeader based on role}

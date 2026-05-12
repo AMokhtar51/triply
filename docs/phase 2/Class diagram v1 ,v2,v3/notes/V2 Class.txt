@@ -1,0 +1,160 @@
+## V2 Class Diagram
+
+================================================================
+Class: TripLeader (extends Member)
+================================================================
+
+Methods:
+
++ viewAttendance(tripID: int): array 
+
++ displayHistory(tripID: int): array 
+
++ setBudgetLimit(tripID: int, limit: float): bool
+
++ getAllDocuments(tripID: array)
+
+================================================================
+Class: Admin (extends User)
+================================================================
+
+Methods:
++ manageUserAccounts(action: string, userID: int): void 
+
++ viewGlobalStatistics(): array 
+
+
+================================================================
+Class: Document
+================================================================
+
+- metadata: string
+- type: string
+
+Methods:
++ uploadProfile(userID: int, type: string, originalName: string, tmpPath: string): array
++ listProfile(userID: int): array
+
+================================================================
+Class: AttendanceRecord
+================================================================
+ 
+Attributes:
+  - memberID: int
+  - activityID: int
+  - attendanceStatus: string
+ 
+================================================================
+Class: HealthInfo
+================================================================
+Attributes:
+  - memberID: int
+  - healthData: array
+  - lastUpdated: datetime
+  - isSensitive: boolean
+
+Methods:
+  + createOrUpdate(data: array): void
+  + markAsSensitive(): void
+
+================================================================
+Class: ChangeLog
+================================================================
+Attributes:
+  - logID: int
+  - tripID: int
+  - changedBy: int
+  - changeDetails: string
+  - timestamp: datetime
+
+Methods:
+  + rollback(): void
+
+================================================================
+Class: DocumentController
+================================================================
+Attributes:
+  - uploadStatus: string
+
+Methods:
+  + requestDocumentUpload(fileData: array, memberID: int, tripID: int): void
+  + validateFileType(type: string): boolean
+  + checkFileSize(size: int): boolean
+  + verifyAccessRights(memberID: int, tripID: int): boolean
+  + renderDocumentContent(docID: int): void
+
+================================================================
+Class: HealthInfoController
+================================================================
+Attributes:
+  - isSensitive: boolean
+
+Methods:
+  + saveHealthRequest(data: array, memberID: int): void
+
+================================================================
+Class: PermissionController
+================================================================
+Methods:
+  + fetchMemberList(tripID: int): array
+  + processPermissionChange(memberID: int, newLevel: string): void
+  + validateAction(targetID: int, adminID: int): boolean
+
+================================================================
+Class: ItineraryController
+================================================================
+Attributes:
+  - locations: array
+  - routeData: array
+  - alternativeData: array
+  - apiStatus: string
+  - currentTripID: int
+
+Methods:
+  + requestOptimization(locations: array): void
+  + showConnectionError(): void
+
+================================================================
+Class: RouteOptimizeAPI <<external>>
+================================================================
+Attributes:
+  - apiKey: string
+
+Methods:
+  + sendDestinations(locations: array): void
+  + calculateOptimalRoute(): array
+
+================================================================
+Class: ExternalMapService  <<external>>
+================================================================
+  NOTE: From Mari SD1. Was referenced in dependencies but
+        never declared as a class. Added here.
+ 
+Attributes:
+  (none)
+ 
+Methods:
+  + renderRoute(routeObj: array): void
+  + showMultipleOptions(alternativeData: array): void
+  + displayFallbackMessage(): void
+ 
+================================================================
+Relationships
+================================================================
+
+Associations:
+  Trip          1 --- *    ChangeLog
+  Activity      1 --- *    AttendanceRecord
+ 
+Composition:
+  TripMember    ◆1 --- 1   HealthInfo
+ 
+  FIX: Both multiplicities now shown. Diamond is on TripMember
+       (the whole), not on HealthInfo.
+ 
+Dependencies:
+  ItineraryController  - - ->  RouteOptimizeAPI
+  ItineraryController  - - ->  ExternalMapService
+  DocumentController   - - ->  Document
+  HealthInfoController - - ->  HealthInfo
+  PermissionController - - ->  TripLeader	

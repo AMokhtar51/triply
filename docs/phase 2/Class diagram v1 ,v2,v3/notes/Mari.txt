@@ -1,0 +1,89 @@
+
+<------------------------------------------------------------------------------------------------------------>
+
+**1st SD**
+New Classes:
+extSystem:RouteOptimizeAPI:
+**New Attributes: apiKey.**
+Methods: sendDestinations(locations), calculateOptimalRoute().
+
+ExternalMapService:
+Methods: showMultipleOptions(alternativeData), displayFallbackMessage(),renderRoute(routeObj).
+
+ItineraryController
+**New Attributes: locations, routeData, alternativeData, apiStatus, currentTripID.**
+New Methods: requestOptimization(),returnRouteData,GiveAlternativeData,  showConnectionError(), sucess.
+
+<------------------------------------------------------------------------------------------------------------>
+
+**2nd SD:**
+New Classes:
+MemberSettings: 
+**New Attributes: memberList.**
+Methods:openMemberManagement(), selectMember(memberI), updatePermissions(newLevel),returnMemberListData,notifyInvalidAction("Cannot removeown permissions"), notifyUpdateSuccess().
+
+PermissionController:
+**New Attributes: adminID.**
+Methods: fetchMemberList(),updateConfirmed(), processPermissionChange(memberID, newLevel), validateAction(targetID).
+
+**DataBase
+New Methods:updateRecord(), AskForQueryMembersByTripId().
+
+**MemberAccount
+**New Attributes: targetID, newLevel.**
+New Methods:setPermissions(newLevel), successConfirm().
+
+Modified classes:
+**Trip Leader:
+**New Attributes: isTripMember (Boolean status).**
+New Methods:  displayPermissionPanel(),showErrorMessage, displayStatus("Permission Applied").
+
+<------------------------------------------------------------------------------------------------------------>
+
+**3rd & 4th SD:**
+New Classes:
+DocumentUploadForm: 
+**New Attributes: selectedFile.**
+Methods: clickUploadDocument(), selectFile(docID, type, size),showSucess(),reportFailure("Unauthorized Not a tripmember"),reportFailure("Encryption Failed"),reportFailure("Invaild File").
+
+DocumentController
+**New Attributes: uploadStatus.**
+New Methods: requestDocumentUpload(), validateFileType(type), checkFileSize(size), getDocumentDetails(), verifyAccessRights(),returnDocRecord(), returnNull(),isMember(),encrypt(docID),returnFilePath(),encryptionError(),renderDocumentContent().
+
+DocumentListPage
+New Methods: clickView(docID),showDocument(docinstance),notifyAccessDenied(), notifyDocumentNotFound().
+
+DataBase
+New Methods:  store(encryptedData), findByID(docID).
+
+EncryptionService:
+**New Attributes: encryptionKey.**
+New Methods:encryptDocumentData(docID)
+
+Modified classes:
+**Document
+**New Attributes: fileSize, fileType, encryptedData.**
+New Methods: instantiateFromRecord().
+
+Trip member:
+New Methods:displayAbortMessage(),fileUploadedSuccessfully(),displayContent,showErrorMessage("Access Denied"),showErrorMessage("Document not found").
+
+<------------------------------------------------------------------------------------------------------------>
+
+**5th SD:**
+HealthSettingsPage
+Methods: openHealthSettings(), updateHealthDetails(), clickSave(),clickCancel(), notifySaveSuccess(),notifyValdationError(). 
+
+HealthInfo 
+**New Attributes: healthData, lastUpdated.**
+New Methods: createOrUpdate(data),markAsSensitive(),SuccessConfirm.
+
+HealthInfoController
+**New Attributes: isSensitive.**
+New Methods:saveHealthRequest(data),UpdateSuccess.
+
+Database:
+Methods:secureStore(data)
+
+Trip member:
+New Methods:discardChanges(),displaySuccessMessage(),showErrorMessage("Please fill all required fields").

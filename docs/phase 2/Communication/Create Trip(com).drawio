@@ -1,0 +1,99 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="hHy9yB6X2Xu09qzL0pyU">
+    <mxGraphModel dx="1814" dy="1312" grid="1" gridSize="12" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="BxCsN3wmMS1vP0x80ylZ-35" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;strokeWidth=4;strokeColor=#000000;startSize=9;endSize=6;jumpSize=6;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="144" y="-121" as="sourcePoint" />
+            <mxPoint x="216" y="-121" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BxCsN3wmMS1vP0x80ylZ-36" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;strokeWidth=4;strokeColor=#000000;startSize=9;endSize=6;jumpSize=6;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="218" y="24" as="sourcePoint" />
+            <mxPoint x="143" y="24" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BxCsN3wmMS1vP0x80ylZ-37" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;strokeWidth=4;strokeColor=#000000;startSize=9;endSize=6;jumpSize=6;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="360" y="132" as="sourcePoint" />
+            <mxPoint x="360" y="59" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BxCsN3wmMS1vP0x80ylZ-38" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;strokeWidth=4;strokeColor=#000000;startSize=9;endSize=6;jumpSize=6;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="408" y="59" as="sourcePoint" />
+            <mxPoint x="408" y="133" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BxCsN3wmMS1vP0x80ylZ-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#d5e8d4;strokeColor=#82B366;strokeWidth=2;gradientColor=#97d077;fontColor=#000000;fontSize=12;labelBackgroundColor=none;" value="Trip Leader" vertex="1">
+          <mxGeometry height="65" width="45" x="-36.5" y="-80.5" as="geometry" />
+        </mxCell>
+        <mxCell id="BxCsN3wmMS1vP0x80ylZ-4" parent="1" style="html=1;whiteSpace=wrap;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;" value=":TripController" vertex="1">
+          <mxGeometry height="40" width="100" x="335" y="-68" as="geometry" />
+        </mxCell>
+        <mxCell id="BxCsN3wmMS1vP0x80ylZ-5" edge="1" parent="1" source="BxCsN3wmMS1vP0x80ylZ-1" style="endArrow=classic;html=1;rounded=0;strokeWidth=1.5;strokeColor=#000000;labelBackgroundColor=none;fontColor=#000000;" target="BxCsN3wmMS1vP0x80ylZ-4" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-54" y="-27.5" as="sourcePoint" />
+            <mxPoint x="335" y="-27.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BxCsN3wmMS1vP0x80ylZ-6" connectable="0" parent="BxCsN3wmMS1vP0x80ylZ-5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;fontColor=#000000;fontSize=12;fontStyle=0" value="&lt;span style=&quot;color: rgb(40, 37, 61); font-family: &amp;quot;Recursive Variable&amp;quot;, arial, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;1: Open &quot;Create new trip&quot; form&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0967" y="-2" as="geometry">
+            <mxPoint x="9" y="-35" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BxCsN3wmMS1vP0x80ylZ-19" parent="1" style="html=1;whiteSpace=wrap;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;" value=":DB" vertex="1">
+          <mxGeometry height="40" width="100" x="335" y="192" as="geometry" />
+        </mxCell>
+        <mxCell id="BxCsN3wmMS1vP0x80ylZ-20" connectable="0" parent="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;fontColor=#000000;fontSize=12;fontStyle=0" value="&lt;span style=&quot;color: rgb(40, 37, 61); font-family: &amp;quot;Recursive Variable&amp;quot;, arial, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;1.1: Return blank trip form&lt;/span&gt;" vertex="1">
+          <mxGeometry x="137" y="-51" as="geometry">
+            <mxPoint x="32" y="20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BxCsN3wmMS1vP0x80ylZ-21" connectable="0" parent="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;fontColor=#000000;fontSize=12;fontStyle=0" value="&lt;span style=&quot;color: rgb(40, 37, 61); font-family: &amp;quot;Recursive Variable&amp;quot;, arial, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;2: Submit trip details (name, date, destination, budget)&lt;/span&gt;" vertex="1">
+          <mxGeometry x="137" y="-81" as="geometry">
+            <mxPoint x="32" y="20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BxCsN3wmMS1vP0x80ylZ-23" edge="1" parent="1" source="BxCsN3wmMS1vP0x80ylZ-4" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#000000;labelBackgroundColor=none;fontColor=#000000;curved=1;" target="BxCsN3wmMS1vP0x80ylZ-4" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="504" y="-48" />
+            </Array>
+            <mxPoint x="456" as="sourcePoint" />
+            <mxPoint x="782" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BxCsN3wmMS1vP0x80ylZ-24" connectable="0" parent="BxCsN3wmMS1vP0x80ylZ-23" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;fontColor=#000000;fontSize=12;fontStyle=0" value="&lt;span style=&quot;color: rgb(40, 37, 61); font-family: &amp;quot;Recursive Variable&amp;quot;, arial, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;2.1: Validate all required fields&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0967" y="-2" as="geometry">
+            <mxPoint x="98" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BxCsN3wmMS1vP0x80ylZ-29" edge="1" parent="1" source="BxCsN3wmMS1vP0x80ylZ-4" style="endArrow=classic;html=1;rounded=0;strokeWidth=1.5;strokeColor=#000000;labelBackgroundColor=none;fontColor=#000000;" target="BxCsN3wmMS1vP0x80ylZ-19" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="252.5" y="84" as="sourcePoint" />
+            <mxPoint x="578.5" y="84" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BxCsN3wmMS1vP0x80ylZ-30" connectable="0" parent="BxCsN3wmMS1vP0x80ylZ-29" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;fontColor=#000000;fontSize=12;fontStyle=0" value="&lt;span style=&quot;color: rgb(40, 37, 61); font-family: &amp;quot;Recursive Variable&amp;quot;, arial, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;2.2: INSERT new trip record generate unique Trip ID&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0967" y="-2" as="geometry">
+            <mxPoint x="178" y="16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BxCsN3wmMS1vP0x80ylZ-31" connectable="0" parent="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;fontColor=#000000;fontSize=12;fontStyle=0" value="&lt;span style=&quot;color: rgb(40, 37, 61); font-family: &amp;quot;Recursive Variable&amp;quot;, arial, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;2.3: Return new Trip ID&lt;/span&gt;" vertex="1">
+          <mxGeometry x="253" y="69" as="geometry">
+            <mxPoint x="32" y="20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BxCsN3wmMS1vP0x80ylZ-32" connectable="0" parent="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;fontColor=#000000;fontSize=12;fontStyle=0" value="&lt;span style=&quot;color: rgb(40, 37, 61); font-family: &amp;quot;Recursive Variable&amp;quot;, arial, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;2.4: Show trip created&lt;/span&gt;" vertex="1">
+          <mxGeometry x="137" y="-30" as="geometry">
+            <mxPoint x="32" y="20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

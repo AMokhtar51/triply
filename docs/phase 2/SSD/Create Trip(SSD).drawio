@@ -1,0 +1,92 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="A5YsrjmRMv9v138QiA2K">
+    <mxGraphModel dx="658" dy="424" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="mZYfCOJi3AC478Y-L5wx-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#d5e8d4;strokeColor=#82B366;strokeWidth=2;gradientColor=#97d077;fontColor=#000000;fontSize=12;labelBackgroundColor=none;" value="Trip Leader" vertex="1">
+          <mxGeometry height="65" width="45" x="78" y="175" as="geometry" />
+        </mxCell>
+        <mxCell id="mZYfCOJi3AC478Y-L5wx-2" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;rounded=0;strokeWidth=1.5;strokeColor=#FF0000;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="100" y="520" as="sourcePoint" />
+            <mxPoint x="100" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mZYfCOJi3AC478Y-L5wx-3" edge="1" parent="1" source="mZYfCOJi3AC478Y-L5wx-7" style="endArrow=none;dashed=1;html=1;rounded=0;strokeWidth=1.5;strokeColor=#FF0000;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="440" y="580.952380952381" as="sourcePoint" />
+            <mxPoint x="440" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mZYfCOJi3AC478Y-L5wx-7" parent="1" style="html=1;whiteSpace=wrap;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;" value=":System" vertex="1">
+          <mxGeometry height="40" width="100" x="390" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="mZYfCOJi3AC478Y-L5wx-9" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;strokeWidth=1.5;strokeColor=#000000;labelBackgroundColor=none;fontColor=#000000;" target="mZYfCOJi3AC478Y-L5wx-14" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="105" y="320" as="sourcePoint" />
+            <mxPoint x="395.0000000000001" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mZYfCOJi3AC478Y-L5wx-16" connectable="0" parent="mZYfCOJi3AC478Y-L5wx-9" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;fontColor=#000000;fontSize=14;" value="&lt;span style=&quot;color: rgb(40, 37, 61); font-family: &amp;quot;Recursive Variable&amp;quot;, arial, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;openCreateTripPage()&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0967" y="-2" as="geometry">
+            <mxPoint x="15" y="-16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mZYfCOJi3AC478Y-L5wx-13" parent="1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#D5E8D4;gradientColor=#97D077;strokeColor=#82B366;" value="" vertex="1">
+          <mxGeometry height="200" width="10" x="95" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="mZYfCOJi3AC478Y-L5wx-14" parent="1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#F8CECC;strokeColor=#B85450;gradientColor=#EA6B66;" value="" vertex="1">
+          <mxGeometry height="200" width="10" x="435" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="mZYfCOJi3AC478Y-L5wx-17" edge="1" parent="1" source="mZYfCOJi3AC478Y-L5wx-14" style="endArrow=classic;html=1;rounded=0;strokeWidth=1.5;strokeColor=#000000;labelBackgroundColor=none;fontColor=#000000;dashed=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="395.0000000000001" y="360" as="sourcePoint" />
+            <mxPoint x="105" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mZYfCOJi3AC478Y-L5wx-18" connectable="0" parent="mZYfCOJi3AC478Y-L5wx-17" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;fontColor=#000000;fontSize=14;" value="&lt;span style=&quot;color: rgb(40, 37, 61); font-family: &amp;quot;Recursive Variable&amp;quot;, arial, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;displayCreateTripForm()&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0967" y="-2" as="geometry">
+            <mxPoint x="-11" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mZYfCOJi3AC478Y-L5wx-19" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;strokeWidth=1.5;strokeColor=#000000;labelBackgroundColor=none;fontColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="105" y="440" as="sourcePoint" />
+            <mxPoint x="435" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mZYfCOJi3AC478Y-L5wx-20" connectable="0" parent="mZYfCOJi3AC478Y-L5wx-19" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;fontColor=#000000;fontSize=14;" value="&lt;span style=&quot;color: rgb(40, 37, 61); font-family: &amp;quot;Recursive Variable&amp;quot;, arial, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;submitForm()&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0967" y="-2" as="geometry">
+            <mxPoint x="14" y="-16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mZYfCOJi3AC478Y-L5wx-21" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;strokeWidth=1.5;strokeColor=#000000;labelBackgroundColor=none;fontColor=#000000;dashed=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="140" y="480" />
+            </Array>
+            <mxPoint x="435" y="480" as="sourcePoint" />
+            <mxPoint x="105" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mZYfCOJi3AC478Y-L5wx-22" connectable="0" parent="mZYfCOJi3AC478Y-L5wx-21" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;fontColor=#000000;fontSize=14;" value="&lt;span style=&quot;color: rgb(40, 37, 61); font-family: &amp;quot;Recursive Variable&amp;quot;, arial, sans-serif; font-size: 16px; background-color: rgb(255, 255, 255);&quot;&gt;confirmTripCreation()&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0967" y="-2" as="geometry">
+            <mxPoint x="-9" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mZYfCOJi3AC478Y-L5wx-23" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;strokeWidth=1.5;strokeColor=#000000;labelBackgroundColor=none;fontColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="105" y="400" as="sourcePoint" />
+            <mxPoint x="435" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mZYfCOJi3AC478Y-L5wx-24" connectable="0" parent="mZYfCOJi3AC478Y-L5wx-23" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;fontColor=#000000;fontSize=14;" value="&lt;span style=&quot;color: rgb(40, 37, 61); font-family: &amp;quot;Recursive Variable&amp;quot;, arial, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;enterTripDetails(destination, dates, description)&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0967" y="-2" as="geometry">
+            <mxPoint x="14" y="-16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

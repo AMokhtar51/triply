@@ -1,0 +1,379 @@
+1st:"assign repo.png"
+**Class: System
+
+attributes: taskList, memberList, assignmentStatus
+
+methods:
+
+openResponsibilitiesSection()
+
+selectTask()
+
+assignTaskToMember()
+
+receiveAcceptanceOrDecline()
+
+**Class: Leader
+
+attributes: leaderId, name
+
+methods:
+
+displayTasksAndMembers()
+
+reportAssignmentFailure()
+
+notifyTaskReturnToUnassigned()
+
+notifyMemberDecline()
+
+confirmAssignmentSaved()
+
+**Class: Assigned member
+
+attributes: memberId, status
+
+methods:
+
+notifyOfAssignedTask()
+<---------------------------------------------------------------------->
+
+2nd:"confirme or reject act.png"
+**Class: System
+
+attributes: proposalList, statusUpdate
+
+methods:
+
+openProposalList()
+
+receiveProposals()
+
+confirmOrRejectActivity()
+
+receiveEmptySignal()
+
+**Class: DB
+
+attributes: connectionString
+
+methods:
+
+fetchProposals()
+
+updateStatus()
+
+**Class: Trip leader
+
+attributes: leaderId
+
+methods:
+
+displayProposals()
+
+receiveNotificationSent()
+
+notifySuccess()
+
+showNoProposals()
+
+Class: Notfi server
+
+attributes: subscriberList
+
+methods:
+
+notifyMembers()
+<---------------------------------------------------------------------->
+
+3rd:"Leave Trip"
+**Class: System
+
+attributes: memberList, notificationStatus
+
+methods:
+
+clickLeaveTripButton()
+
+removeMemberFromTripMemberList()
+
+**Class: Member
+
+attributes: memberId
+
+methods:
+
+showConfirmationDialog()
+
+showLeaveConfirmationMessage()
+
+dismissDialog()
+
+Class: Trip Leader
+
+attributes: leaderId
+
+methods:
+
+receiveLeaveNotification()
+<---------------------------------------------------------------------->
+
+4th "Manage Trip Info"
+**Class: System
+
+attributes: tripData, validationResults
+
+methods:
+
+openTripSettingsPage()
+
+receiveTripRecord()
+
+submitUpdatedFields(name,date,budget)
+
+validateAllInputFields()
+
+confirmSaveSuccessful()
+
+**Class: DB
+
+attributes: connectionString
+
+methods:
+
+fetchCurrentTripData()
+
+updateTripRecord()
+
+**Class: Trip leader
+
+attributes: leaderId
+
+methods:
+
+displayEditableFormWithCurrentValue()
+
+showSuccessMessage()
+<---------------------------------------------------------------------->
+5th "Manage user accounts"
+**Class: System
+
+attributes: userRecord, permissionStatus
+
+methods:
+
+openUserManagement()
+
+searchForUser()
+
+receiveUserRecord()
+
+receiveErrorMessage()
+
+selectAction()
+
+checkPermissionsAndConstraints()
+
+confirmSaved()
+
+**Class: DB
+
+attributes: dbLogs
+
+methods:
+
+lookupUserRecord()
+
+saveChangesAndLogOperation()
+
+**Class: Admin
+
+attributes: adminId
+
+methods:
+
+displayErrorMessage()
+
+displayUserRecord()
+
+showConfirmation()
+<---------------------------------------------------------------------->
+6th"View Attendance"
+**Class: System
+
+attributes: attendanceRecords, filterCriteria
+
+methods:
+
+openAttendancePage()
+
+receiveFullAttendanceRecords()
+
+groupMembersByStatus()
+
+applyFilter()
+
+receiveFilteredAttendanceRecords()
+
+**Class: DB
+
+attributes: attendanceTable
+
+methods:
+
+queryMembersWithStatus()
+
+reQueryAttendanceForActivity()
+
+**Class: Trip leader
+
+attributes: leaderId
+
+methods:
+
+displayAttendanceList()
+
+updateDisplayedListwithFilteredResults()
+<---------------------------------------------------------------------->
+7th"View Change History"
+**Class: System
+
+attributes: changeLogs, rollbackStatus
+
+methods:
+
+openChangeHistory()
+
+receiveLogs()
+
+revertChange()
+
+receiveRollbackSuccess()
+
+**Class: DB
+
+attributes: logStorage
+
+methods:
+
+retrieveLogs()
+
+rollbackData()
+
+**Class: Trip leader
+
+attributes: leaderId
+
+methods:
+
+displayHistory()
+
+updateView()
+
+showEmptyHistory()
+<---------------------------------------------------------------------->
+8th:"View Global Statistics"
+**Class: System
+
+attributes: aggregatedDataset, kpiMetrics
+
+methods:
+
+openStatisticsDashboard()
+
+receiveAggregatedDataset()
+
+computeSummaryKPIsAndMetrics()
+
+applyDateRangeFilter()
+
+receiveFilteredDataset()
+
+**Class: DB
+
+attributes: globalDataTable
+
+methods:
+
+queryTotalMetrics()
+
+reQueryWithSelectedDateRange()
+
+**Class: Admin
+
+attributes: adminId
+
+methods:
+
+renderChartsAndTables()
+
+updateAllChartsWithFilteredData()
+<----------------------------------------------------------------------->
+9th:"Create Trip"
+**Class: System
+
+attributes: tripDetails, validationStatus
+
+methods:
+
+openCreateNewTripForm()
+
+submitTripDetails()
+
+validateAllRequiredFields()
+
+receiveNewTripID()
+
+**Class: Trip leader
+
+attributes: leaderId
+
+methods:
+
+returnBlankTripForm()
+
+showTripCreated()
+
+Class: DB
+
+attributes: connectionString
+
+methods:
+
+insertNewTripRecord()
+<---------------------------------------------------------------------------->
+
+10th:"Join Trip"
+**Class: System
+
+attributes: tripAvailability, memberList
+
+methods:
+
+openTripPageAndViewDetails()
+
+checkIfTripHasAvailableSeats()
+
+receiveLeaderApprovalOrRejectionRequest()
+
+addMemberToTripList()
+
+**Class: Member
+
+attributes: memberId, joinStatus
+
+methods:
+
+displayRequestToJoinButton()
+
+displaySuccessMessage()
+
+displayRejectionMessage()
+
+**Class: Trip Leader
+
+attributes: leaderId
+
+methods:
+
+sendJoinRequestNotification()

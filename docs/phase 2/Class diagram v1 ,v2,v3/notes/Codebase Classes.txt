@@ -1,0 +1,50 @@
+Database:
+- DBS: map[]
+- TABLE_MAP: map[]
+- instances: []
+
+methods:
+- __construct(): void
+- __clone(): void
+- static getInstance(db: string): PDO
+- static for(table: string): PDO
+- static resolvePath(relative: string): string
+
+Encryption:
+- ALGO: string
+- IV_LEN: int
+- TAG_LEN: int
+- CONTEXT: string
+
+methods:
++ static deriveKey(userID: int): string
++ static encryptJson(data: array, userID: int): string
++ static decryptJson(blob: string, userID: int): array
+
+ApiResponse:
+methods:
++ static json(data: mixed, status: int): void
++ static success(data: mixed, message: string): void
++ static unauthorized(): void
++ static forbidden(): void
+
+Auth:
+- COOKIE_NAME: string
+- TOKEN_TTL: 604800
+- COOKIE_SECURE: Boolean
+
+methods:
++ static register(email, password, name, phone, nationality, role): int
++ static login(email, password): User
++ static logout(): void
++ static current(): User
++ static require(): User
++ static requireRole(role: string): User
++ static revokeAll(userId: int): void
++ static purgeExpired(): void
++ static issueToken(userId: int): void
++ static setCookie(value: string, expires: int): void
++ static clearCookie(): void
+
+w
+
